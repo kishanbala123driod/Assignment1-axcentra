@@ -1,0 +1,194 @@
+
+==================== index.html ====================
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>C Programming — Week 1 Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Week 1 — Basics & Loops (C Programming)</h1>
+    <p>Assignment submission by: <strong>Your Name</strong></p>
+  </header>
+
+  <main>
+    <section class="task">
+      <h2>Tasks from Week 1</h2>
+      <ol>
+        <li>Print “Hello World.”</li>
+        <li>Find sum of two numbers.</li>
+        <li>Check even or odd.</li>
+        <li>Print Fibonacci series up to n terms.</li>
+      </ol>
+    </section>
+
+    <section class="solutions">
+      <h2>Sample C code snippets</h2>
+
+      <article>
+        <h3>1. Hello World</h3>
+        <pre><code>// hello.c
+#include <stdio.h>
+
+int main() {
+    printf("Hello World.\n");
+    return 0;
+}
+        </code></pre>
+      </article>
+
+      <article>
+        <h3>2. Sum of Two Numbers</h3>
+        <pre><code>// sum.c
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+    printf("Sum = %d\n", a + b);
+    return 0;
+}
+        </code></pre>
+      </article>
+
+      <article>
+        <h3>3. Even or Odd</h3>
+        <pre><code>// evenodd.c
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+    if (n % 2 == 0)
+        printf("%d is even\n", n);
+    else
+        printf("%d is odd\n", n);
+    return 0;
+}
+        </code></pre>
+      </article>
+
+      <article>
+        <h3>4. Fibonacci Series</h3>
+        <pre><code>// fib.c
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    long a = 0, b = 1, next;
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
+
+    for (i = 0; i < n; i++) {
+        printf("%ld ", a);
+        next = a + b;
+        a = b;
+        b = next;
+    }
+    return 0;
+}
+        </code></pre>
+      </article>
+
+      <p class="note">Mini Project Idea: Simple Calculator using switch-case.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Assignment content from Week 1 — Basics & Loops.</p>
+  </footer>
+</body>
+</html>
+
+
+
+==================== style.css ====================
+:root {
+  --bg: #f9fbff;
+  --card: #ffffff;
+  --accent: #0b6ef6;
+  --muted: #666;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: #222;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  margin-bottom: 18px;
+}
+
+h1 {
+  margin: 0 0 6px 0;
+  color: var(--accent);
+}
+
+main {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+.task, .solutions {
+  background: var(--card);
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+pre {
+  background: #f4f6fb;
+  padding: 10px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+footer {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+code {
+  font-family: monospace;
+}
+
+
+
+==================== README.md ====================
+# Week 1 — C Programming Assignment  
+This project contains the required tasks for Week 1 of the Axcentra online internship.
+
+## Included Tasks
+- Hello World  
+- Sum of two numbers  
+- Check even or odd  
+- Fibonacci series  
+
+## Files
+- `index.html` — Main assignment page  
+- `style.css` — Styling  
+- C code examples included inside HTML  
+
+## Author
+Your Name  
+Date: 2025  
+===================================================
